@@ -319,3 +319,12 @@ document.addEventListener("DOMContentLoaded", ()=>{
     }
 
 });
+document.addEventListener("click", () => {
+
+    let bgMusic = document.getElementById("bgMusic");
+
+    if(bgMusic){
+        bgMusic.play().catch(()=>{});
+    }
+
+}, { once: true });
